@@ -1,0 +1,97 @@
+body{
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif
+}
+figure{
+    background-image: url(https://picsum.photos/id/237/600/400);
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 0 0 5px 2px #111111;
+    background-size: 100%;
+    transition: 1s;
+    background-position: center;
+}
+figure img{
+    box-shadow: 0 0 5px 2px #111111;
+    border-radius: 100px;
+    border: 3px solid white;
+    transform: translateX(50px) translateY(50px);
+
+}
+/* aliniem h2 la mijlocul avatarcei , in drepta ei */
+figure h2{
+    font-size: 50px;
+    transform: translateY(-80px) translateX(180PX);
+    color: white;
+    background-color: #29040073;
+    width: 380px;
+    padding: 10PX;
+    animation: slidein-h2 1s;
+
+}
+#text{
+color: white;
+font-size: 16px;
+transform: translateX(180px) translateY(-120px);
+background-color: #673c2b82 ;
+width: 380px;
+padding:10px;
+animation: slidein-p 2s;
+}
+figure p:last-child{
+    font-size: 17px;
+    color: white;
+    transform: translateY(40px) translateX(430px)
+}
+
+@keyframes slidein-h2{
+    from {
+        transform: translateY(-80px) translateX(500PX);
+    }
+    to {
+        transform: translateY(-80px) translateX(180PX);
+    }
+}
+
+@keyframes slidein-p{
+    from {
+        transform: translateX(180px) translateY(600px);
+        ;
+    }
+
+    to {
+        transform: translateX(180px) translateY(-120px);
+    
+    }
+
+    
+}
+/* facem fundalul sa se mareasca cand il atingi */
+figure:hover{
+    background-size: 110%;
+ }  
+
+
+/* figure h2{
+    font-size: 50px;
+    transform: translateY(-80px) translateX(180PX);
+    color: white;
+    background-color: #29040073;
+    width: 380px;
+    padding: 10PX;
+
+}
+#text{
+color: white;
+font-size: 16px;
+transform: translateX(180px) translateY(-120px);
+background-color: #673c2b82 ;
+width: 380px;
+padding:10px;
+}
+figure p:last-child{
+    font-size: 17px;
+    color: white;
+    transform: translateY(40px) translateX(430px) */
